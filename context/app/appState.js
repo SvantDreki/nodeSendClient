@@ -56,7 +56,6 @@ const AppState = ({ children }) => {
 
         try {
             const resultado = await clienteAxios.post('/api/archivos', formData);
-            console.log(resultado.data)
 
             dispatch({
                 type: SUBIR_ARCHIVO_EXITO,

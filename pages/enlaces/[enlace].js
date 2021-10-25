@@ -37,6 +37,8 @@ const Enlace = ({ enlace }) => {
     const [ password, setPassword ] = useState('');
     const [archivo, setArchivo] = useState(enlace.archivo)
 
+    console.log(archivo);
+
     const verificarPassword = async e => {
         e.preventDefault();
 
